@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    let phiCoDinh = 25000;
+    let soPhutSuDung= parseInt(prompt('Số phút đã sử dụng'));
+    let tongPhi;
+    let namMuoiPhutDau = 50;
+    let motTramNamMuoiPhut = 150;
+    let haiTramPhut = 200;
+    if (soPhutSuDung > 200){
+        tongPhi = (soPhutSuDung - haiTramPhut)*200+namMuoiPhutDau*600+motTramNamMuoiPhut*400;
+        alert(tongPhi);
+    }else if(soPhutSuDung>50) {
+        tongPhi = (soPhutSuDung - namMuoiPhutDau) * 400 + namMuoiPhutDau * 600;
+    alert(tongPhi);
+    }else{
+        tongPhi = soPhutSuDung*600;
+        alert(tongPhi);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let doanhSo = parseInt(prompt("Doanh số"));
+    let hoaHong;
+    let thap = 3000000;
+    let trungBinh = 8000000;
+    if (doanhSo < thap) {
+        alert('Không có hoa hồng');
+    } else if (doanhSo > thap) {
+        hoaHong = doanhSo * 35 / 100;
+        alert(hoaHong);
+    }
+    if (doanhSo > trungBinh) {
+        hoaHong = doanhSo * 38 / 100;
+        alert(hoaHong);
+    }
+</script>
+
+</body>
+</html>

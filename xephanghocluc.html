@@ -7,14 +7,14 @@
 <body>
 </body>
 <script>
-    let baiKiemTra = Number(prompt());
-    let thiGiuaKy = Number(prompt());
-    let thiCuoiKy = Number(prompt());
+    let baiKiemTra = Number(prompt('Nhập điểm kiểm tra'));
+    let thiGiuaKy = Number(prompt('Nhập điểm thi giữa kì'));
+    let thiCuoiKy = Number(prompt('Điểm thi cuối kì'));
     let result;
     result = (baiKiemTra + thiCuoiKy + thiGiuaKy) / 3;
-    if (result >= 8) {
+    if (result > 8) {
         alert('Hoc sinh gioi');
-    }else if (result >= 6) {
+    } else if (result > 6) {
         alert('Hoc sinh kha')
     } else {
         alert('hoc sinh trung binh')
